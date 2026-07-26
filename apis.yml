@@ -1,8 +1,26 @@
 aid: edgeq
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/edgeq.png
 name: EdgeQ
-description: 'EdgeQ is a company surfaced as a portfolio company of threshold-ventures and added to the
-  API Evangelist network as a stub for enrichment. Sector: infrastructure. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'EdgeQ is a fabless semiconductor company headquartered in Santa Clara,
+  California, building a converged "Base Station-on-a-Chip" that integrates 5G, 6G,
+  non-terrestrial network (NTN), custom waveform, CPU, and antenna-controller functions
+  into a single software-defined silicon platform. Its programmable baseband targets
+  small cells, private enterprise 5G, open RAN, satellite (LEO/MEO) communications,
+  and AI-enabled physical devices. EdgeQ is a hardware and silicon provider surfaced
+  as a portfolio company of Threshold Ventures; it publishes a corporate site, a 5G
+  engineering blog, newsroom, and careers, but exposes no public developer portal,
+  API, or machine-readable API specification.'
 url: https://raw.githubusercontent.com/api-evangelist/edgeq/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +30,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Infrastructure
+- Semiconductors
+- 5G
+- Wireless
+- Silicon
+- Base Station
+- Open RAN
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -25,3 +49,12 @@ maintainers:
 common:
 - type: Website
   url: https://www.edgeq.io/
+- type: Blog
+  url: https://www.edgeq.io/blog
+- type: DomainSecurity
+  url: security/edgeq-domain-security.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
